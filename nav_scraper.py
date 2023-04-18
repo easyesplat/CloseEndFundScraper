@@ -22,10 +22,6 @@ for tr in nav_table.find_all('tr'):
         row.pop()
         rows.append(row)
 
-# Print the table headers and rows
-print(headers)
-print(rows)
-
 # Uploading data to Excel
 workbook = openpyxl.load_workbook(constants.FILE_PATH + 'Middlefield_Analysis.xlsx')
 worksheet = workbook['Middlefield']
