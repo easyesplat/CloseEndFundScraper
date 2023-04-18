@@ -30,6 +30,13 @@ print(rows)
 workbook = openpyxl.load_workbook(constants.FILE_PATH + 'Middlefield_Analysis.xlsx')
 worksheet = workbook['Middlefield']
 
-worksheet.cell(1, 1).value = '3'
+for row_ind in range(len(rows) + 1):
+    for col_ind in range(len(headers)):
+        value = ''
+        if row_ind == 0:
+            value = headers[col_ind]
+        else:
+            value = rows[row_ind - 1][col_ind] 
+        worksheet.cell(row = row_ind + 1, column = col_ind + 1).value = value
 
 workbook.save(constants.FILE_PATH + 'Middlefield_Analysis.xlsx')
