@@ -1,2 +1,1 @@
-FILE_PATH = "/Users/eric/Documents/MiddlefieldScraper/MiddlefieldNAVScraper/"
-MGF_DATA = "/Users/eric/Downloads/MGF NAV Change calculator v2.xlsx"
+MGF_DATA = "C:\\Users\\Almitas Intern\\Dropbox\\2023 Winter + Spring Interns\\MGF NAV Change calculator v2.xlsx"

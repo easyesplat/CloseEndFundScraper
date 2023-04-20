@@ -24,8 +24,7 @@ print(f"MGF NAV: {nav_value.split()[1]}")
 driver.close()
 
 # Uploading data to Excel
-# workbook = openpyxl.load_workbook(constants.MGF_DATA)
-# worksheet = workbook['Sheet2']
-# worksheet.cell(row = 13, column = 6).value = nav_value.split()[1]
-
-# workbook.save(constants.MGF_DATA)
+workbook = openpyxl.load_workbook(constants.MGF_DATA)
+worksheet = workbook['MGF Trade Calc']
+worksheet.cell(row = 13, column = 6).value = nav_value.split()[1]
+workbook.save(constants.MGF_DATA)
